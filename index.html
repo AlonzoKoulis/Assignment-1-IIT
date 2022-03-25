@@ -38,9 +38,10 @@
   text-decoration: none;
   font-size: 20px;
 }
-/* Right-aligned link */
-.mynavbar a.right {
-  float: right;
+
+/* Centered link(s) */
+.mynavbar a.center {
+  text-align: middle;
 }
 
 /* Change color on hover */
@@ -49,55 +50,77 @@
   color: black;
 }
 
-.myContent {
-  background-color: lightgrey;
-  width: 550px;
-  border: 10px solid lightblue;
-  padding: 10px;
-  margin: 20px 80px 10px 60px ;
+/* The column container for content */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Creates two columns that sits approximately next to each other */
+.side{
+  flex: 30%
+  background=color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {
+  flex: 30%
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.images {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
 .paragraph p {
   font-size: 18px;
 }
 
-.MyMargin2  {
-  margin: 25px 80px 40px 80px;
-}
-
-/*Centers the image*/
-  img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-    </style>
+  </style>
   </head>
       <body>
 
   <div class="header">
-    <h1>This is my Assignment Report</h1>
-      <h3 center>First Ever Website Created by Alexander Koulis, Hope you enjoy</h3>
+    <h1>My Assignment Report</h1>
+      <h3 center>First Ever Website Created by Alexander Koulis</h3>
   </div>
 
   <div class="mynavbar">
-    <a href="#">Alex's GitHub Repository</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
+    <a href="https://github.com/AlonzoKoulis/Assignment-1-IIT" allign="middle" >Alex's GitHub Repository</a>
     <a href="#" class="right">Link</a>
   </div>
 
 
-    <h2 align="center">
-    <h2><center>Information About Me!</center></h2>
+<div class="row">
+  <div class"side">
+    <h2>About Me</h2>
+    <h5>What I look like</h5>
+    <div> <img style="height:200px;" src="Me.jpg" alt= "" </div>
 
-  <div class="myContent">
-      <p>I was originally born in Australia which entitles me to have lived here my entire life pretty much.  However, my cultural background and heritage lies in Greece where my ancestors were born and migrated to Australia during the era of 1940’s mainly to escape from war. My parents were also born in Australia but influenced by the orthodox religion as that is what the Greeks have believed in for many centuries. As you probably already know I do in fact speak Greek and understand the language but am not as fluent as my parents are, as they grew up with the Greek language with their parents more than I have 10 times over.</p>
+    <p>I was born in Carlton, Victoria, which makes me Australian. However, my cultural background and heritage lies in Greece where my grandparents were born and immigrated to Australia during the early 1960’s mainly to escape from lack of jobs and poverty. Both my parents were born in Australia, the first generation children of Greek immigrants but influenced by the Greek Orthodox religion and a retained culture that has followed Greeks wherever they move to many centuries. As you probably already know I do in fact speak Greek and understand the language but I am not as fluent as my parents are, as they grew up with the Greek language with their parents more than I have 10 times over.</p>
+
+    <h3>More Information About Me</h3>
+
+    <p>I have completed my highest education which was Year 12 at Emmanuel College VCE in 2021 with my subjects being English, Further Maths, Psychology, Software Development (Applied Computing), VET Sport and Recreation and also a bit of CISCO networking in Year 10. We do own a pet cat who has been named “Zorba”. The reason for his chosen name is the famous film character, Zorba the Greek. I loved sport, having played several sports, even attaining a brown belt in Karate. I turned back to playing soccer for just over 8 years which I was very skilful at, however, when Covid appeared it made me lose my motivation to continue playing and all my sporting activities just stopped which had developed more into my gaming passion.</p>
+
+    <h3>Interesting Facts About Me</h3>
+
+    <p>One interesting fact that I barely even talk about is the high investment of my time into video gaming but not just in today’s world. I used to play the good ol’ classics that started the journey. I just stumbled upon it, I was just a casual player, enjoying the time, figuring out the little mechanics back on the old Nintendo DS. I used to love grabbing the small cards and inserting them into the Nintendo DS to play Pokemon Silver/Gold and plenty more of my childhood favourites, like Mario Kart, Call of Duty 4 Modern Warfare and Super Mario 64.</p>
+
+    <p>With a passion for video games, this has matured and developed over many years of development of advanced hardware and software to run more texturized and more quality visuals in today’s world of gaming. I used to be a great casual console player on the Playstation 4. My favourite game has to be Horizon Zero Dawn, it was a massive open-world exploration game, it had an amazing post-apocalyptic visual world, where man-made machines (dinosaurs) were programmed to prolong the Earth’s life by using a computer program. </p>
+
+    <p>This storyline had many possible paths for the player like doing sidequest for extra content or generally just focusing on the main story which I abosolutely loved. Depending on what the player chose in the dialogue options, the player changed the directions and paths of the game. The overall ending being wasn't impacted too much but still leading to the climatic ending. With my interests today focused on gaming experiences, I am currently playing the mainstream games, such as Valorant, Fortnite, Overwatch, Rocket League and many more. I have played more competitively with other players in recent times, making gaming a more intense experience with others on a team or even solo. </p>
   </div>
 
 
+<div class="main">
+  <h2>First interests in I.T</h2>
+
+
       <p align="center">
-        <center><img src="Mediator.jpg" alt="" width="700" </center</p>
+        <center><img src="" alt="" width="700" </center</p>
     </body>
 </html>

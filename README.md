@@ -1,2 +1,2 @@
-# Assignment 1 IIT
- All the things for the assignment 1 thing
+# Assignment 1 I.T
+ All of the files and images needed for Assignment 1

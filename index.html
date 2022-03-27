@@ -19,7 +19,6 @@
       text-align: center;
       background: #ADD8E6;
       color: black;
-      position: relative;
 }
 
 .header h1 {
@@ -78,6 +77,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* If the screen is less than 700px wide, the navigation links are stacked instead of next to each other */
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* If the screen is less than 400px wide, the navigation links are stacked instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
 }
 
 </style>
